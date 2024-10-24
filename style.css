@@ -1,0 +1,63 @@
+
+html {
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+/* END border-box fix */
+
+body {
+  padding: 50;
+  margin: 0;
+  height: 500%;
+  background-color: #000000;
+  
+  background-image: linear-gradient(#00ff00, #000000);
+}
+
+h1, h2, h3, h4, h5 {
+  text-transform: uppercase;
+}
+
+.container {
+  background: #111111;
+  display: grid;
+  grid-template-columns: repeat(12, minmax(0, 1fr));
+  width: 100%
+
+}
+.container > * {
+  padding: 5px;
+}
+
+
+
+header {
+  background: #ff6600;
+  grid-column: 1 / 13;
+}
+
+main {
+background: #ff9933;
+  grid-column: 1 / 13;
+}
+
+nav {
+  background: #9900cc;
+  
+  grid-column: 1 / 13;
+}
+
+aside {
+  background: #cc66ff;
+
+  grid-column: 1 / 13;
+}
+
+footer {
+  background:#00ff00;
+  
+  grid-column: 1 / 13;
+}
+
